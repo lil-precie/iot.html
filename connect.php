@@ -1,3 +1,3 @@
 <?php
 // Connect to the database (replace with your database credentials)
-$conn = new mysqli("localhost", "your_username", "your_password", "your_database");
+$conn = new mysqli("localhost", "usernmame", "prepaid_meter");

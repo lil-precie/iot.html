@@ -10,10 +10,7 @@
     <title>Prepaid meter</title>
 </head>
 <body>
-
-    
-
-        
+    <div class="container mt-4">
         <script>
             // Simulated data or user input
             var voltageValue = 25;  
@@ -42,261 +39,255 @@
     
                     // Update progress bars
                     updateProgressBars();
-                }, 5000); // Update every 3 seconds, you can change this interval
+                }, 5000); // Update every 5 seconds, you can change this interval
             });
         </script>
         
-    
-
-    <div class="row">
-        <div class="col-sm-3">
-            <div class="card mb-3 h-100">
-                <div class="card-body h-100">
-                    <h5 class="card-title">Voltage</h5>
-                    <div class="progress rounded-progress">
-                        <div class="progress-bar bg-danger rounded-progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="row">
+            <!-- ... Your progress bar cards ... -->
+                <div class="col-sm-3">
+                    <div class="card mb-3 h-100">
+                        <div class="card-body h-100">
+                            <h5 class="card-title">Voltage</h5>
+                            <div class="progress rounded-progress">
+                                <div class="progress-bar bg-danger rounded-progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="col-sm-3">
-            <div class="card mb-3 border-bottom h-100">
-                <div class="card-body h-100">
-                    <h5 class="card-title">Current</h5>
-                    <div class="progress rounded-progress">
-                        <div class="progress-bar bg-info rounded-progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+        
+                <div class="col-sm-3">
+                    <div class="card mb-3 border-bottom h-100">
+                        <div class="card-body h-100">
+                            <h5 class="card-title">Current</h5>
+                            <div class="progress rounded-progress">
+                                <div class="progress-bar bg-info rounded-progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="col-sm-3">
-            <div class="card mb-3 border-bottom h-100">
-                <div class="card-body h-100">
-                    <h5 class="card-title">Power</h5>
-                    <div class="progress rounded-progress">
-                        <div class="progress-bar bg-warning rounded-progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+        
+                <div class="col-sm-3">
+                    <div class="card mb-3 border-bottom h-100">
+                        <div class="card-body h-100">
+                            <h5 class="card-title">Power</h5>
+                            <div class="progress rounded-progress">
+                                <div class="progress-bar bg-warning rounded-progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="col-sm-3">
-            <div class="card mb-3 border-bottom h-100">
-                <div class="card-body h-100">
-                    <h5 class="card-title">Energy</h5>
-                    <div class="progress rounded-progress">
-                        <div class="progress-bar bg-danger rounded-progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        
+                <div class="col-sm-3">
+                    <div class="card mb-3 border-bottom h-100">
+                        <div class="card-body h-100">
+                            <h5 class="card-title">Energy</h5>
+                            <div class="progress rounded-progress">
+                                <div class="progress-bar bg-danger rounded-progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-
-
-
-
-
-
-<div class="container mt-4">
-    <div class="card">
-        <div class="card-body">
-            <table class="table table-borderless table-responsive">
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th class="text-muted fw-600">Username</th>
-                        <th class="text-muted fw-600">Phone Number</th>
-                        <th class="text-muted fw-600">Status</th>
-                        <th class="text-muted fw-600">Current</th>
-                        <th class="text-muted fw-600">Voltage</th>
-                        <th class="text-muted fw-600">Power</th>
-                        <th class="text-muted fw-600">Units</th>
-                        <th class="text-muted fw-600">Date (Loaded)</th>
-                        <th></th>
-                    </tr>
-                </thead>
-
-                
-                <tbody>
-                    <tr class="align-middle alert" role="alert">
-                        <td>
-                            <div class="d-flex align-items-center">
-                                <div class="img-container"></div>
+    <div class="container mt-4">
+        <div class="card">
+            <div class="card-body">
+                <table class="table table-borderless table-responsive">
+                    <!-- ... Your table content ... -->
+                                        <tr>
+                                            <th></th>
+                                            <th class="text-muted fw-600">Username</th>
+                                            <th class="text-muted fw-600">Phone Number</th>
+                                            <th class="text-muted fw-600">Status</th>
+                                            <th class="text-muted fw-600">Current</th>
+                                            <th class="text-muted fw-600">Voltage</th>
+                                            <th class="text-muted fw-600">Power</th>
+                                            <th class="text-muted fw-600">Units</th>
+                                            <th class="text-muted fw-600">Date (Loaded)</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                    
+                                    
+                                    <tbody>
+                                        <tr class="align-middle alert" role="alert">
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="img-container"></div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-inline-flex align-items-center active">
+                                                    <div class="circle"></div>
+                                                    <div class="ps-2">Sandra</div>
+                                                </div>
+                                            </td>
+                                            <td>123-456-7890</td>
+                                            <td>OFF</td>
+                                            <td>10 A</td>
+                                            <td>220 V</td>
+                                            <td>50 W</td>
+                                            <td>50 Units</td>
+                                            <td>2023-11-11</td>
+                                            <td>
+                                                <div class="btn p-0" data-bs-dismiss="alert">
+                                                    <span class="fas fa-times"></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                    
+                                        <tr class="align-middle alert" role="alert">
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="img-container"></div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-inline-flex align-items-center active">
+                                                    <div class="circle"></div>
+                                                    <div class="ps-2">Sam</div>
+                                                </div>
+                                            </td>
+                                            <td>123-456-7890</td>
+                                            <td>ON</td>
+                                            <td>10 A</td>
+                                            <td>220 V</td>
+                                            <td>50 W</td>
+                                            <td>50 Units</td>
+                                            <td>2023-11-11</td>
+                                            <td>
+                                                <div class="btn p-0" data-bs-dismiss="alert">
+                                                    <span class="fas fa-times"></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                    
+                                        <tr class="align-middle alert" role="alert">
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="img-container"></div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-inline-flex align-items-center active">
+                                                    <div class="circle"></div>
+                                                    <div class="ps-2">Paul</div>
+                                                </div>
+                                            </td>
+                                            <td>123-456-7890</td>
+                                            <td>ON</td>
+                                            <td>10 A</td>
+                                            <td>220 V</td>
+                                            <td>50 W</td>
+                                            <td>50 Units</td>
+                                            <td>2023-11-11</td>
+                                            <td>
+                                                <div class="btn p-0" data-bs-dismiss="alert">
+                                                    <span class="fas fa-times"></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                    
+                                        <tr class="align-middle alert" role="alert">
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="img-container"></div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-inline-flex align-items-center active">
+                                                    <div class="circle"></div>
+                                                    <div class="ps-2">precious</div>
+                                                </div>
+                                            </td>
+                                            <td>123-456-7890</td>
+                                            <td>OFF</td>
+                                            <td>10 A</td>
+                                            <td>220 V</td>
+                                            <td>50 W</td>
+                                            <td>50 Units</td>
+                                            <td>2023-11-11</td>
+                                            <td>
+                                                <div class="btn p-0" data-bs-dismiss="alert">
+                                                    <span class="fas fa-times"></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                    
+                                        <tr class="align-middle alert" role="alert">
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="img-container"></div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-inline-flex align-items-center active">
+                                                    <div class="circle"></div>
+                                                    <div class="ps-2">Elvis</div>
+                                                </div>
+                                            </td>
+                                            <td>123-456-7890</td>
+                                            <td>OFF</td>
+                                            <td>10 A</td>
+                                            <td>220 V</td>
+                                            <td>50 W</td>
+                                            <td>50 Units</td>
+                                            <td>2023-11-11</td>
+                                            <td>
+                                                <div class="btn p-0" data-bs-dismiss="alert">
+                                                    <span class="fas fa-times"></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                    
+                                        <tr class="align-middle alert" role="alert">
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="img-container"></div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-inline-flex align-items-center active">
+                                                    <div class="circle"></div>
+                                                    <div class="ps-2">Clever</div>
+                                                </div>
+                                            </td>
+                                            <td>123-456-7890</td>
+                                            <td>ON</td>
+                                            <td>10 A</td>
+                                            <td>220 V</td>
+                                            <td>50 W</td>
+                                            <td>50 Units</td>
+                                            <td>2023-11-11</td>
+                                            <td>
+                                                <div class="btn p-0" data-bs-dismiss="alert">
+                                                    <span class="fas fa-times"></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
-                        </td>
-                        <td>
-                            <div class="d-inline-flex align-items-center active">
-                                <div class="circle"></div>
-                                <div class="ps-2">Sandra</div>
-                            </div>
-                        </td>
-                        <td>123-456-7890</td>
-                        <td>OFF</td>
-                        <td>10 A</td>
-                        <td>220 V</td>
-                        <td>50 W</td>
-                        <td>50 Units</td>
-                        <td>2023-11-11</td>
-                        <td>
-                            <div class="btn p-0" data-bs-dismiss="alert">
-                                <span class="fas fa-times"></span>
-                            </div>
-                        </td>
-                    </tr>
-
-                    <tr class="align-middle alert" role="alert">
-                        <td>
-                            <div class="d-flex align-items-center">
-                                <div class="img-container"></div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="d-inline-flex align-items-center active">
-                                <div class="circle"></div>
-                                <div class="ps-2">Sam</div>
-                            </div>
-                        </td>
-                        <td>123-456-7890</td>
-                        <td>ON</td>
-                        <td>10 A</td>
-                        <td>220 V</td>
-                        <td>50 W</td>
-                        <td>50 Units</td>
-                        <td>2023-11-11</td>
-                        <td>
-                            <div class="btn p-0" data-bs-dismiss="alert">
-                                <span class="fas fa-times"></span>
-                            </div>
-                        </td>
-                    </tr>
-
-                    <tr class="align-middle alert" role="alert">
-                        <td>
-                            <div class="d-flex align-items-center">
-                                <div class="img-container"></div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="d-inline-flex align-items-center active">
-                                <div class="circle"></div>
-                                <div class="ps-2">Paul</div>
-                            </div>
-                        </td>
-                        <td>123-456-7890</td>
-                        <td>ON</td>
-                        <td>10 A</td>
-                        <td>220 V</td>
-                        <td>50 W</td>
-                        <td>50 Units</td>
-                        <td>2023-11-11</td>
-                        <td>
-                            <div class="btn p-0" data-bs-dismiss="alert">
-                                <span class="fas fa-times"></span>
-                            </div>
-                        </td>
-                    </tr>
-
-                    <tr class="align-middle alert" role="alert">
-                        <td>
-                            <div class="d-flex align-items-center">
-                                <div class="img-container"></div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="d-inline-flex align-items-center active">
-                                <div class="circle"></div>
-                                <div class="ps-2">precious</div>
-                            </div>
-                        </td>
-                        <td>123-456-7890</td>
-                        <td>OFF</td>
-                        <td>10 A</td>
-                        <td>220 V</td>
-                        <td>50 W</td>
-                        <td>50 Units</td>
-                        <td>2023-11-11</td>
-                        <td>
-                            <div class="btn p-0" data-bs-dismiss="alert">
-                                <span class="fas fa-times"></span>
-                            </div>
-                        </td>
-                    </tr>
-
-                    <tr class="align-middle alert" role="alert">
-                        <td>
-                            <div class="d-flex align-items-center">
-                                <div class="img-container"></div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="d-inline-flex align-items-center active">
-                                <div class="circle"></div>
-                                <div class="ps-2">Elvis</div>
-                            </div>
-                        </td>
-                        <td>123-456-7890</td>
-                        <td>OFF</td>
-                        <td>10 A</td>
-                        <td>220 V</td>
-                        <td>50 W</td>
-                        <td>50 Units</td>
-                        <td>2023-11-11</td>
-                        <td>
-                            <div class="btn p-0" data-bs-dismiss="alert">
-                                <span class="fas fa-times"></span>
-                            </div>
-                        </td>
-                    </tr>
-
-                    <tr class="align-middle alert" role="alert">
-                        <td>
-                            <div class="d-flex align-items-center">
-                                <div class="img-container"></div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="d-inline-flex align-items-center active">
-                                <div class="circle"></div>
-                                <div class="ps-2">Clever</div>
-                            </div>
-                        </td>
-                        <td>123-456-7890</td>
-                        <td>ON</td>
-                        <td>10 A</td>
-                        <td>220 V</td>
-                        <td>50 W</td>
-                        <td>50 Units</td>
-                        <td>2023-11-11</td>
-                        <td>
-                            <div class="btn p-0" data-bs-dismiss="alert">
-                                <span class="fas fa-times"></span>
-                            </div>
-                        </td>
-                    </tr>
-
-                    <!-- <?php include 'display_data.php'; ?> -->
-
-                </tbody>
-            </table>
+                        </div>
+                    
+                    </div>
+                    
+                </table>
+            </div>
         </div>
     </div>
 
-</div>
+    <div class="container mt-4">
+        <canvas id="myChart" width="600" height="400"></canvas>
+    </div>
 
-
-
-<div class="container mt-4">
-    <canvas id="myChart" width="600" height="400"></canvas>
-</div>
-
-
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const data = {
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const data = {
+                // ... Your chart data ...
             labels: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
             datasets: [
             {
@@ -330,75 +321,49 @@
         ]
     };
 
+            // Get the context of the canvas element
+            const ctx = document.getElementById('myChart').getContext('2d');
 
+            // Create the chart
+            const myChart = new Chart(ctx, {
+                type: 'line',
+                data: data,
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        x: {
+                            type: 'linear',
+                            position: 'bottom'
+                        },
+                        y: {
+                            min: 0
+                        }
+                    }
+                }
+            });
 
+            // Add click event listener to each table row
+            const tableRows = document.querySelectorAll('.table-row');
+            tableRows.forEach(row => {
+                row.addEventListener('click', function () {
+                    // Extract data attributes from the clicked row
+                    const current = this.getAttribute('data-current');
+                    const voltage = this.getAttribute('data-voltage');
+                    const power = this.getAttribute('data-power');
+                    const energy = this.getAttribute('data-energy');
 
-
-// Get the context of the canvas element
-const ctx = document.getElementById('myChart').getContext('2d');
-
-// Create the chart
-const myChart = new Chart(ctx, {
-    type: 'line',
-    data: data,
-    options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        scales: {
-            x: {
-                type: 'linear',
-                position: 'bottom'
-            },
-            y: {
-                min: 0
-            }
-        }
-    }
-});
-// </script>
-
-
-
-
-
-
-
-        // Add click event listener to each table row
-        const tableRows = document.querySelectorAll('.table-row');
-        tableRows.forEach(row => {
-            row.addEventListener('click', function () {
-                // Extract data attributes from the clicked row
-                const username = this.getAttribute('data-username');
-                const phoneNumber = this.getAttribute('data-phonenumber');
-                const status = this.getAttribute('data-status');
-                const current = this.getAttribute('data-current');
-                const voltage = this.getAttribute('data-voltage');
-                const power = this.getAttribute('data-power');
-                const units = this.getAttribute('data-units');
-                const date = this.getAttribute('data-date');
-
-
-
-
-                
-    
-                // Update the chart with the extracted data
-                myChart.data.datasets[0].data = [parseFloat(current)];
-                myChart.data.datasets[1].data = [parseFloat(voltage)];
-                myChart.data.datasets[2].data = [parseFloat(power)];
-                myChart.data.datasets[3].data = [parseFloat(energy)];
-                myChart.update();
-    
-                
+                    // Update the chart with the extracted data
+                    myChart.data.datasets[0].data = [parseFloat(current)];
+                    myChart.data.datasets[1].data = [parseFloat(voltage)];
+                    myChart.data.datasets[2].data = [parseFloat(power)];
+                    myChart.data.datasets[3].data = [parseFloat(energy)];
+                    myChart.update();
+                });
             });
         });
-    });
     </script>
 
-    
-<a href="prepaid_meter form" class="btn btn-primary">login</a>
-
-
-
+    <a href="form" class="btn btn-primary">login</a>
 </body>
 </html>

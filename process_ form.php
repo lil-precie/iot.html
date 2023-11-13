@@ -1,9 +1,9 @@
 <?php
 // Replace these credentials with your actual database credentials
-$servername = "your_servername";
+$servername = "localhost";
 $username = "your_username";
 $password = "your_password";
-$dbname = "your_dbname";
+$dbname = "prepaid_meter";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
